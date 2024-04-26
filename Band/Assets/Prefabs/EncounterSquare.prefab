@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2306084862901448678}
   - component: {fileID: 5303594057045750835}
+  - component: {fileID: 6910687747684033446}
   m_Layer: 0
   m_Name: EncounterSquare
   m_TagString: Untagged
@@ -84,3 +85,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6910687747684033446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3193855747721596551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6b94ac018294162809f6dea2cde337, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
