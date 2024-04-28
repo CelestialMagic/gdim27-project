@@ -123,6 +123,61 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &1156253057
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1156253059}
+  - component: {fileID: 1156253058}
+  m_Layer: 0
+  m_Name: SquareSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1156253058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156253057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2c3289fd93654a0e9a38ceab4b0ecda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xStart: -8
+  yStart: -5
+  row: 7
+  column: 7
+  xSpace: 1.5
+  ySpace: 1.5
+  encounterSquare: {fileID: 6910687747684033446, guid: cfecf9d048f2647feadf64b6ff90d284, type: 3}
+  emptySquare: {fileID: 8791717023847810750, guid: d7cbb651d0380474584d2ec6c49f09ed, type: 3}
+  gigSquare: {fileID: 1640713687269901606, guid: 4953701385fc8479cafd679d83b1ce9a, type: 3}
+  allowedEncounters: 14
+  allowedGigs: 14
+--- !u!4 &1156253059
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156253057}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.8, y: -5, z: -0.062494077}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2007813059
 GameObject:
   m_ObjectHideFlags: 0
