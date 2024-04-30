@@ -49,8 +49,10 @@ public class SquareSpawner : MonoBehaviour
         Square square = squares[Random.Range(0, squares.Count)];
         if(square == encounterSquare && allowedEncounters > 0)
         {
+            encounterSquare.SetEncounter(allowedEncounters);
             allowedEncounters--;
             return encounterSquare;
+            
         }
         else if (square == gigSquare && allowedGigs > 0)
         {

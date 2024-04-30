@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Square : MonoBehaviour
 {
@@ -11,11 +12,16 @@ public class Square : MonoBehaviour
     [SerializeField]
     private bool isGig;//A serializable bool representing if a square is a gig
 
+    //[SerializeField]
+    //private TMP_Text encounterText;
+
+    private int encounterNum;
 
     //SetEncounter() allows another class to assign an encounter to a square
-    public void SetEncounter()
+    public void SetEncounter(int number)
     {
-
+        encounterNum = number; 
+        //encounterText.SetText("" + encounterNum);
     }
 
     //GetIsEncounter() returns the bool value isEncounter
