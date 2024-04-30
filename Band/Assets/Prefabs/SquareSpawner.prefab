@@ -27,7 +27,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -9.8, y: -5, z: -0.062494077}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -48,8 +48,8 @@ MonoBehaviour:
   yStart: -5
   row: 8
   column: 8
-  xSpace: 1.5
-  ySpace: 1.5
+  xSpace: 3
+  ySpace: 3
   encounterSquare: {fileID: 6910687747684033446, guid: cfecf9d048f2647feadf64b6ff90d284, type: 3}
   emptySquare: {fileID: 8791717023847810750, guid: d7cbb651d0380474584d2ec6c49f09ed, type: 3}
   gigSquare: {fileID: 1640713687269901606, guid: 4953701385fc8479cafd679d83b1ce9a, type: 3}
