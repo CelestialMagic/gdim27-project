@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 27442642}
   - component: {fileID: 27442641}
+  - component: {fileID: 27442643}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -178,9 +179,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1956399235
+  m_SortingLayer: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -207,6 +208,85 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &27442643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27442640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 380a94b74dd3a4baabc469e5d11941b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upwardMovement:
+    m_Name: Upward Movement
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 57aed68e-38a2-4c43-a02c-fd50097e5872
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: UpMove
+      m_Id: c9320225-9b3b-4b87-8f5d-965272d60db9
+      m_Path: 1DAxis
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Upward Movement
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: 3e23d356-080a-4da6-9534-2b07432500c5
+      m_Path: <Keyboard>/s
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Upward Movement
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: 3eb11103-2355-40f2-8140-ff0f291b9b5e
+      m_Path: <Keyboard>/w
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Upward Movement
+      m_Flags: 8
+    m_Flags: 0
+  sideMovement:
+    m_Name: Side Movement
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: dd10b6bc-edc7-44b1-9d04-32d9ec25fe48
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: SideMove
+      m_Id: 480ddd0b-8ce0-4e0e-a27a-7e455e3c95e7
+      m_Path: 1DAxis
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Side Movement
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: 7316e340-d7d8-4bff-bbc2-4ddd832c509b
+      m_Path: <Keyboard>/a
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Side Movement
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: d584651f-5335-4a12-95af-38458e8a2c03
+      m_Path: <Keyboard>/d
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Side Movement
+      m_Flags: 8
+    m_Flags: 0
+  moveAmount: 5
 --- !u!1 &669946400
 GameObject:
   m_ObjectHideFlags: 0
@@ -242,8 +322,8 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
+  m_LookAt: {fileID: 27442642}
+  m_Follow: {fileID: 27442642}
   m_Lens:
     FieldOfView: 60
     OrthographicSize: 5
@@ -270,7 +350,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 669946400}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.2419286, y: -3.2387686, z: -32.627926}
+  m_LocalPosition: {x: -1.2419286, y: -3.2387686, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -403,7 +483,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.027100407, g: 0.8207547, b: 0.11099575, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -444,7 +524,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2007813059}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.2419286, y: -3.2387686, z: -32.627926}
+  m_LocalPosition: {x: -1.2419286, y: -3.2387686, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -492,8 +572,28 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4522452356064297792, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
+      propertyPath: xSpace
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4522452356064297792, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
+      propertyPath: ySpace
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4522452356064297793, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
       propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4522452356064297793, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4522452356064297793, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4522452356064297793, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
+      propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4522452356064297793, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
@@ -535,6 +635,10 @@ PrefabInstance:
     - target: {fileID: 4522452356064297793, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4522452356064297793, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4522452356064297795, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
       propertyPath: m_Name
