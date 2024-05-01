@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class SquareSpawner : MonoBehaviour
 {
     [SerializeField]
@@ -32,6 +33,9 @@ public class SquareSpawner : MonoBehaviour
     [SerializeField]
     private int allowedGigs;//The total number of gigs for a board
 
+   
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -49,13 +53,16 @@ public class SquareSpawner : MonoBehaviour
         Square square = squares[Random.Range(0, squares.Count)];
         if(square == encounterSquare && allowedEncounters > 0)
         {
-            encounterSquare.SetEncounter(allowedEncounters);
+            encounterSquare.SetMyEncounter(allowedEncounters);
+            Debug.Log(square.GetMyEncounter());
             allowedEncounters--;
             return encounterSquare;
             
         }
         else if (square == gigSquare && allowedGigs > 0)
         {
+            gigSquare.SetMyEncounter(allowedGigs);
+            Debug.Log(square.GetMyEncounter());
             allowedGigs--;
             return gigSquare; 
 

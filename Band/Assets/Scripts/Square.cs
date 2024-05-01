@@ -12,16 +12,19 @@ public class Square : MonoBehaviour
     [SerializeField]
     private bool isGig;//A serializable bool representing if a square is a gig
 
-    //[SerializeField]
-    //private TMP_Text encounterText;
-
+    [SerializeField]
     private int encounterNum;
 
     //SetEncounter() allows another class to assign an encounter to a square
-    public void SetEncounter(int number)
+    public void SetMyEncounter(int number)
     {
         encounterNum = number; 
-        //encounterText.SetText("" + encounterNum);
+    }
+
+
+    public int GetMyEncounter()
+    {
+        return encounterNum;
     }
 
     //GetIsEncounter() returns the bool value isEncounter

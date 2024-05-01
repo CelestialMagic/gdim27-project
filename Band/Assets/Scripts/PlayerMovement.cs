@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -14,16 +15,16 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float moveAmount;
 
+    [SerializeField]
+    private TMP_Text myEncounter;
+
+    [SerializeField]
+    private TMP_Text myGig;
 
     private void OnEnable()
     {
         upwardMovement.Enable();
         sideMovement.Enable();
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
     }
 
     // Update is called once per frame
@@ -31,4 +32,18 @@ public class PlayerMovement : MonoBehaviour
     {
         transform.Translate(sideMovement.ReadValue<float>() * Time.deltaTime * moveAmount, upwardMovement.ReadValue<float>() * Time.deltaTime * moveAmount, 0);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Encounter") 
+        {
+            Debug.Log("Collided!");
+            myEncounter.text = "Encounter # " + collision.gameObject.GetComponent<Square>().GetMyEncounter();
+        }else if (collision.gameObject.tag == "Gig")
+        {
+            myGig.text = "Gig # " + collision.gameObject.GetComponent<Square>().GetMyEncounter();
+        }
+    }
+
+
 }
