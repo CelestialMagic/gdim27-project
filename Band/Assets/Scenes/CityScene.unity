@@ -1118,6 +1118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameScene: CityScene
   titleScene: TitleScreen
+  tutorialScene: 
   pauseMenu: {fileID: 282306122}
 --- !u!4 &787059800
 Transform:
@@ -2244,6 +2245,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4522452356064297792, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
+      propertyPath: row
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4522452356064297792, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
+      propertyPath: column
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4522452356064297793, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
       propertyPath: m_RootOrder
       value: 1

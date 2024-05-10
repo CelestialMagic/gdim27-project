@@ -37,6 +37,7 @@ public class MenuNavigation : MonoBehaviour
         Application.Quit(); 
     }
 
+    //Takes player to tutorial scene 
     public void GoToTutorial()
     {
         SceneManager.LoadScene(tutorialScene);
