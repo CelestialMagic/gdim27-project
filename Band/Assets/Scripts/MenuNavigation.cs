@@ -6,13 +6,18 @@ using UnityEngine.SceneManagement;
 public class MenuNavigation : MonoBehaviour
 {
     [SerializeField]
-    private string gameScene;//a string representing the game scene
+    protected string gameScene;//a string representing the game scene
 
     [SerializeField]
-    private string titleScene;//a string representing the title screen
+    protected string titleScene;//a string representing the title screen
+
+    protected virtual void Update()
+    {
+
+    }
 
     //Takes player to title screen when called
-    public void GoToTitle()
+    public virtual void GoToTitle()
     {
         SceneManager.LoadScene(titleScene);
     }
