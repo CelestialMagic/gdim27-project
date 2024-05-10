@@ -11,6 +11,9 @@ public class MenuNavigation : MonoBehaviour
     [SerializeField]
     protected string titleScene;//a string representing the title screen
 
+    [SerializeField]
+    private string tutorialScene;//a string representing the tutorial scene
+
     protected virtual void Update()
     {
 
@@ -32,5 +35,10 @@ public class MenuNavigation : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit(); 
+    }
+
+    public void GoToTutorial()
+    {
+        SceneManager.LoadScene(tutorialScene);
     }
 }
