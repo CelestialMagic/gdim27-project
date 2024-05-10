@@ -23,7 +23,7 @@ public class MenuNavigation : MonoBehaviour
     }
 
     //Takes player to game scene when called
-    public void GoToGameScene()
+    public virtual void GoToGameScene()
     {
         SceneManager.LoadScene(gameScene);
     }
