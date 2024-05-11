@@ -2334,8 +2334,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -173.92516, y: -107.18725}
-  m_SizeDelta: {x: 800, y: 407.52533}
+  m_AnchoredPosition: {x: -173.92516, y: -110.20935}
+  m_SizeDelta: {x: 800, y: 470.5041}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1013131355
 MonoBehaviour:
@@ -2350,7 +2350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.49019608}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2403,8 +2403,8 @@ Transform:
   m_LocalScale: {x: 1.1577424, y: 1.1577424, z: 1.1577424}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1702834203}
   - {fileID: 1875518266}
+  - {fileID: 1702834203}
   - {fileID: 945737705}
   m_Father: {fileID: 203079252}
   m_RootOrder: 5
@@ -2832,12 +2832,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1233598485}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 15.665313, y: -11.689666}
-  m_SizeDelta: {x: 800, y: 407.52533}
+  m_AnchoredPosition: {x: 15.665313, y: -14.1073}
+  m_SizeDelta: {x: 800, y: 469.1046}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1702834204
 MonoBehaviour:
@@ -2852,7 +2852,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.53333336}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3177,7 +3177,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1233598485}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3204,7 +3204,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '
+  m_text: 'Epilogue Text Here
 
 '
   m_isRightToLeft: 0
