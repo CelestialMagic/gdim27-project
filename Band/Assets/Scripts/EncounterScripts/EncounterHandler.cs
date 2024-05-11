@@ -36,7 +36,7 @@ public class EncounterHandler : MonoBehaviour
 
         //Adds a listener to button based on Encounter 
         choiceAButton.onClick.AddListener(delegate { currentEncounter.ChoiceA(); });
-        choiceAButton.onClick.AddListener(delegate { currentEncounter.ChoiceB(); });
+        choiceBButton.onClick.AddListener(delegate { currentEncounter.ChoiceB(); });
 
     }
 
@@ -62,8 +62,8 @@ public class EncounterHandler : MonoBehaviour
     //Removes button from having same choices as before
     public void UnsubscribeButtons()
     {
-        choiceAButton.onClick.RemoveListener(delegate { currentEncounter.ChoiceA(); });
-        choiceAButton.onClick.RemoveListener(delegate { currentEncounter.ChoiceB(); });
+        choiceAButton.onClick.RemoveAllListeners();
+        choiceBButton.onClick.RemoveAllListeners();
     }
 
     //Deactivates EncounterUI
