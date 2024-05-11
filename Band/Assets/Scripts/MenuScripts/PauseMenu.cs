@@ -42,6 +42,8 @@ public class PauseMenu : MenuNavigation
     {
         UnpauseGame();
         GameStateManager.Menu();
+        GameStateManager.SetFinalScore();
+        GameStateManager.ResetValues();
         SceneManager.LoadScene(titleScene);
         
     }

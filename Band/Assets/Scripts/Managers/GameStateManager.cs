@@ -95,10 +95,33 @@ public class GameStateManager : MonoBehaviour
         money += amount;
     }
 
-    //FinalGameOver() could be used to create a leaderboard
-    public static void FinalGameOver()
+    //Resets the game values 
+    public static void ResetValues()
     {
-        state = GAMESTATE.GAMEOVER;
-        //PlayerPrefs.SetFloat("Score", finalScore);
+        money = 0;
+        fans = 0;
+    }
+
+    //Used to set the high score 
+    public static void SetFinalScore()
+    {
+        if(money > PlayerPrefs.GetInt("FinalRevenue") && fans > PlayerPrefs.GetInt("FinalFans"))
+        {
+            PlayerPrefs.SetInt("FinalRevenue", money);
+            PlayerPrefs.SetInt("FinalFans", fans);
+        }
+  
+
+    }
+
+    //Used to retrieve current final score and final fans 
+    public static int GetFinalFanScore()
+    {
+        return PlayerPrefs.GetInt("FinalFans");
+    }
+
+    public static int GetFinalRevenueScore()
+    {
+        return PlayerPrefs.GetInt("FinalRevenue");
     }
 }

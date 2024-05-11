@@ -14,6 +14,9 @@ public class MenuNavigation : MonoBehaviour
     [SerializeField]
     private string tutorialScene;//a string representing the tutorial scene
 
+    [SerializeField]
+    private string highScore;
+
     protected virtual void Update()
     {
 
@@ -43,6 +46,12 @@ public class MenuNavigation : MonoBehaviour
     public void GoToTutorial()
     {
         SceneManager.LoadScene(tutorialScene);
+        GameStateManager.Menu();
+    }
+
+    public void GoToHighScore()
+    {
+        SceneManager.LoadScene(highScore);
         GameStateManager.Menu();
     }
 }
