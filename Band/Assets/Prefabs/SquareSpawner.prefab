@@ -50,7 +50,7 @@ MonoBehaviour:
   column: 8
   xSpace: 3
   ySpace: 3
-  encounterSquare: {fileID: 6910687747684033446, guid: cfecf9d048f2647feadf64b6ff90d284, type: 3}
+  encounterSquare: {fileID: 238096108439437300, guid: cfecf9d048f2647feadf64b6ff90d284, type: 3}
   emptySquare: {fileID: 8791717023847810750, guid: d7cbb651d0380474584d2ec6c49f09ed, type: 3}
   gigSquare: {fileID: 1640713687269901606, guid: 4953701385fc8479cafd679d83b1ce9a, type: 3}
   allowedEncounters: 13

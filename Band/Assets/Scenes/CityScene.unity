@@ -2263,6 +2263,10 @@ PrefabInstance:
       propertyPath: column
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 4522452356064297792, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
+      propertyPath: emptySquare
+      value: 
+      objectReference: {fileID: 238096108439437300, guid: cfecf9d048f2647feadf64b6ff90d284, type: 3}
     - target: {fileID: 4522452356064297793, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
       propertyPath: m_RootOrder
       value: 1
