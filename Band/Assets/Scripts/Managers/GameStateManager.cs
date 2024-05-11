@@ -4,17 +4,12 @@ using UnityEngine;
 
 public class GameStateManager : MonoBehaviour
 {
-    private static int fans;
-
-    private static int money; 
-
     private static GAMESTATE state; //The current game state
 
     private static GameStateManager _instance; //This class is a Singleton - We will also discuss this pattern later in this class.
 
-    private static float finalFanScore; //Represents the final number of fans collected
+    private static int fans, money, finalFanScore, finalRevenueScore; //Represents the fan and revenue counts
 
-    private static float finalRevenueScore;//Represents the final revenue collected
 
     //An enum that represents the game states. 
     enum GAMESTATE
@@ -52,7 +47,7 @@ public class GameStateManager : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(state);
+ 
     }
 
     //Updates game state to menu
@@ -82,7 +77,10 @@ public class GameStateManager : MonoBehaviour
     //Sets the fans
     public static void SetFans(int amount)
     {
-        fans += amount;
+        if (fans + amount <= 0)
+            fans = 0;
+        else
+            fans += amount;
     }
 
     //Gets the money

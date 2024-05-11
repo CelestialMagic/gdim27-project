@@ -16,16 +16,16 @@ public class Encounter : Square
     public void ChoiceA()
     {
         Debug.Log("Choice A");
-        UpdateFans(choiceAFans);
-        UpdateMoney(choiceAMoney);
+        GameStateManager.SetFans(choiceAFans);
+        GameStateManager.SetMoney(choiceAMoney);
     }
 
     //Called when player chooses the right choice.
     public void ChoiceB()
     {
         Debug.Log("Choice B");
-        UpdateFans(choiceBFans);
-        UpdateMoney(choiceBMoney);
+        GameStateManager.SetFans(choiceBFans);
+        GameStateManager.SetMoney(choiceBMoney);
 
     }
 
