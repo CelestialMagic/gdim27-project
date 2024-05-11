@@ -21,6 +21,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private TMP_Text myGig;
 
+    [SerializeField]
+    private EncounterHandler eh;
+
     private void OnEnable()
     {
         upwardMovement.Enable();
@@ -38,7 +41,9 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.tag == "Encounter") 
         {
             Debug.Log("Collided!");
-            myEncounter.text = "Encounter # " + collision.gameObject.GetComponent<Square>().GetMyEncounter();
+            eh.CurrentEncounter(collision.gameObject.GetComponent<Encounter>());
+
+            //myEncounter.text = "Encounter # " + collision.gameObject.GetComponent<Square>().GetMyEncounter();
         }else if (collision.gameObject.tag == "Gig")
         {
             myGig.text = "Gig # " + collision.gameObject.GetComponent<Square>().GetMyEncounter();

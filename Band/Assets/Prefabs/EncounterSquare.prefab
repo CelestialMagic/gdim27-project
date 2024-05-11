@@ -228,11 +228,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEncounter: 1
   isGig: 0
-  encounterNum: 0
+  encounterNum: 1
   choiceAFans: 0
   choiceAMoney: 0
   choiceBFans: 0
   choiceBMoney: 0
+  encounterName: This is an Encounter
+  encounterText: Text Goes Here
+  choiceAText: Choice A
+  choiceBText: Choice B
 --- !u!1 &3318638452278850611
 GameObject:
   m_ObjectHideFlags: 0
