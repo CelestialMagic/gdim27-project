@@ -10,7 +10,7 @@ public class Encounter : Square
     private int choiceAFans, choiceAMoney, choiceBFans, choiceBMoney;
 
     [SerializeField]
-    private string encounterName, encounterText, choiceAText, choiceBText;
+    private string encounterName, encounterText, choiceAText, choiceBText, choiceAFinish, choiceBFinish;
 
     //Called when player chooses the left choice.
     public void ChoiceA()
@@ -48,6 +48,16 @@ public class Encounter : Square
     public string GetChoiceBText()
     {
         return choiceBText;
+    }
+
+    public string GetChoiceAFinish()
+    {
+        return choiceAFinish;
+    }
+
+    public string GetChoiceBFinish()
+    {
+        return choiceBFinish;
     }
 
 
