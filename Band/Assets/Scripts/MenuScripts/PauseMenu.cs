@@ -26,6 +26,7 @@ public class PauseMenu : MenuNavigation
     {
         Time.timeScale = 0;
         pauseMenu.SetActive(true);
+        GameStateManager.Paused();
     }
 
     //Unpauses the Game and Hides the Menu
@@ -33,12 +34,15 @@ public class PauseMenu : MenuNavigation
     {
         Time.timeScale = 1;
         pauseMenu.SetActive(false);
+        GameStateManager.Game();
     }
 
     //Returns to Title and Unpauses the Game Scene (fixes time scale) 
     public override void GoToTitle()
     {
         UnpauseGame();
+        GameStateManager.Menu();
         SceneManager.LoadScene(titleScene);
+        
     }
 }

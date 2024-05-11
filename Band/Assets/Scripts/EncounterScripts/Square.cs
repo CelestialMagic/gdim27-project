@@ -38,4 +38,16 @@ public class Square : MonoBehaviour
     {
         return isGig;
     }
+
+    //Calls GameStateManager to update global fans
+    protected virtual void UpdateFans(int fans)
+    {
+        GameStateManager.SetFans(fans);
+    }
+
+    //Calls GameStateManager to update global money
+    protected virtual void UpdateMoney(int money)
+    {
+        GameStateManager.SetFans(money);
+    }
 }

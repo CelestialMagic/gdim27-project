@@ -23,12 +23,14 @@ public class MenuNavigation : MonoBehaviour
     public virtual void GoToTitle()
     {
         SceneManager.LoadScene(titleScene);
+        GameStateManager.Menu();
     }
 
     //Takes player to game scene when called
     public virtual void GoToGameScene()
     {
         SceneManager.LoadScene(gameScene);
+        GameStateManager.Game();
     }
 
     //Quits the game
@@ -41,5 +43,6 @@ public class MenuNavigation : MonoBehaviour
     public void GoToTutorial()
     {
         SceneManager.LoadScene(tutorialScene);
+        GameStateManager.Menu();
     }
 }
