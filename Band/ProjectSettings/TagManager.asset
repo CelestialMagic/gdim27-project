@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Encounter
   - Gig
+  - Inactive
   layers:
   - Default
   - TransparentFX

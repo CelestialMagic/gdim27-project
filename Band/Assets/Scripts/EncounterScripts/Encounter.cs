@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Encounter : Square
 {
+    [SerializeField]
+    private SpriteRenderer icon;
+
+    [SerializeField]
+    private Color inactiveColor;
     //Creates four ints representing fans and money for A and B, respectively
     //Can be negative or positive, depending on the encounter
     [SerializeField]
@@ -26,6 +31,14 @@ public class Encounter : Square
         Debug.Log("Choice B");
         GameStateManager.SetFans(choiceBFans);
         GameStateManager.SetMoney(choiceBMoney);
+
+    }
+
+    //Sets an Encounter as inactive after being experienced 
+    public void InactiveEncounter()
+    {
+        gameObject.tag = "Inactive";
+        icon.color = inactiveColor;
 
     }
 

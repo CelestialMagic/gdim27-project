@@ -15,14 +15,6 @@ public class SquareSpawner : MonoBehaviour
     private float xSpace, ySpace;//The spacing between each square
 
     [SerializeField]
-    private Square encounterSquare;//A square representing encounters
-
-    [SerializeField]
-    private Square emptySquare;//A square representing empty spaces
-
-    [SerializeField]
-    private Square gigSquare;//A square representing gigs
-
     private List<Square> squares;//A list of square to be instantiated
 
     private Square lastGenerated;
@@ -40,7 +32,6 @@ public class SquareSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        squares = new List<Square>() { encounterSquare, emptySquare, gigSquare };
         for (int i = 0; i < column * row; i++)
         {
             Instantiate(GenerateRandomSquare(), new Vector2(xStart + (xSpace * (i % column)), yStart + (ySpace * (i / column))), Quaternion.identity);
@@ -50,27 +41,35 @@ public class SquareSpawner : MonoBehaviour
     //GenerateRandomSquare() returns a square based on the numbers of existing squares
     private Square GenerateRandomSquare()
     {
-        Square square = squares[Random.Range(0, squares.Count)];
-        if(square == encounterSquare && allowedEncounters > 0)
+        int index = Random.Range(0, squares.Count);
+        Square square = squares[index];
+
+        if(square.GetIsEncounter() == true && allowedEncounters > 0)
         {
-            encounterSquare.SetMyEncounter(allowedEncounters);
-            Debug.Log(square.GetMyEncounter());
+            square.SetMyEncounter(allowedEncounters);
             allowedEncounters--;
-            return encounterSquare;
+            squares.Remove(square);
+            
+            return square;
             
         }
-        else if (square == gigSquare && allowedGigs > 0)
+        else if(square.GetIsGig() == true && allowedGigs > 0)
         {
-            gigSquare.SetMyEncounter(allowedGigs);
-            Debug.Log(square.GetMyEncounter());
+            square.SetMyEncounter(allowedGigs);
             allowedGigs--;
-            return gigSquare; 
+            squares.Remove(square);
+            return square; 
 
+        }
+        else if (square.GetIsGig() == false && square.GetIsEncounter() == false)
+        {
+            return square;
         }
         else
         {
-            return emptySquare; 
+            return GenerateRandomSquare();
         }
+        
             
         
         

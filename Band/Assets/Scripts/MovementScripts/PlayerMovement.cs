@@ -41,7 +41,10 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.tag == "Encounter") 
         {
             Debug.Log("Collided!");
-            eh.CurrentEncounter(collision.gameObject.GetComponent<Encounter>());
+            Encounter currentEncounter = collision.gameObject.GetComponent<Encounter>();
+            eh.CurrentEncounter(currentEncounter);
+            currentEncounter.InactiveEncounter();
+            
 
             //myEncounter.text = "Encounter # " + collision.gameObject.GetComponent<Square>().GetMyEncounter();
         }else if (collision.gameObject.tag == "Gig")

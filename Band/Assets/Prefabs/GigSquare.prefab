@@ -100,7 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEncounter: 0
   isGig: 1
-  encounterNum: 1
+  encounterNum: 0
 --- !u!61 &-298565909930163861
 BoxCollider2D:
   m_ObjectHideFlags: 0

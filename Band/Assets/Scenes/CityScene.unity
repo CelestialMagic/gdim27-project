@@ -1580,6 +1580,7 @@ MonoBehaviour:
   gameScene: CityScene
   titleScene: TitleScreen
   tutorialScene: 
+  highScore: 
   pauseMenu: {fileID: 282306122}
 --- !u!4 &787059800
 Transform:
@@ -3793,6 +3794,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4522452356064297792, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
+      propertyPath: allowedEncounters
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4522452356064297792, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
+      propertyPath: squares.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4522452356064297792, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
+      propertyPath: squares.Array.data[2]
+      value: 
+      objectReference: {fileID: 3862704355550403617, guid: 78be2ea6de04e47cc970e35e2ef5c808, type: 3}
+    - target: {fileID: 4522452356064297792, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
+      propertyPath: squares.Array.data[3]
+      value: 
+      objectReference: {fileID: 8353302087826680268, guid: 0ccf86a9b6a2241c1beb3011e82701e2, type: 3}
+    - target: {fileID: 4522452356064297792, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
+      propertyPath: squares.Array.data[4]
+      value: 
+      objectReference: {fileID: 3979258397375684016, guid: 008272966c76a41edb5916c7f8ecf3a0, type: 3}
+    - target: {fileID: 4522452356064297792, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
+      propertyPath: squares.Array.data[5]
+      value: 
+      objectReference: {fileID: 5926648180366755589, guid: 3d59c2bddbda846dea268402800cd5d0, type: 3}
+    - target: {fileID: 4522452356064297792, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
+      propertyPath: squares.Array.data[6]
+      value: 
+      objectReference: {fileID: 1640713687269901606, guid: 4953701385fc8479cafd679d83b1ce9a, type: 3}
+    - target: {fileID: 4522452356064297792, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
+      propertyPath: squares.Array.data[7]
+      value: 
+      objectReference: {fileID: 8791717023847810750, guid: d7cbb651d0380474584d2ec6c49f09ed, type: 3}
+    - target: {fileID: 4522452356064297792, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
+      propertyPath: squares.Array.data[8]
+      value: 
+      objectReference: {fileID: 8791717023847810750, guid: d7cbb651d0380474584d2ec6c49f09ed, type: 3}
+    - target: {fileID: 4522452356064297792, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
+      propertyPath: squares.Array.data[9]
+      value: 
+      objectReference: {fileID: 8791717023847810750, guid: d7cbb651d0380474584d2ec6c49f09ed, type: 3}
+    - target: {fileID: 4522452356064297792, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
+      propertyPath: squares.Array.data[10]
+      value: 
+      objectReference: {fileID: 8791717023847810750, guid: d7cbb651d0380474584d2ec6c49f09ed, type: 3}
     - target: {fileID: 4522452356064297793, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
       propertyPath: m_RootOrder
       value: 1
