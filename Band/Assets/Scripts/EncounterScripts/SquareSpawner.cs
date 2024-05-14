@@ -25,16 +25,23 @@ public class SquareSpawner : MonoBehaviour
     [SerializeField]
     private int allowedGigs;//The total number of gigs for a board
 
-   
+    [SerializeField]
+    private Square startingSquare;//The starting square of the grid
 
-
+    [SerializeField]
+    private Square endingSquare;//The ending square of the grid
 
     // Start is called before the first frame update
     void Start()
     {
         for (int i = 0; i < column * row; i++)
         {
-            Instantiate(GenerateRandomSquare(), new Vector2(xStart + (xSpace * (i % column)), yStart + (ySpace * (i / column))), Quaternion.identity);
+            if (i == 0)
+                Instantiate(startingSquare, new Vector2(xStart + (xSpace * (i % column)), yStart + (ySpace * (i / column))), Quaternion.identity);
+            else if (i == column * row - 1)
+                Instantiate(endingSquare, new Vector2(xStart + (xSpace * (i % column)), yStart + (ySpace * (i / column))), Quaternion.identity);
+            else
+                Instantiate(GenerateRandomSquare(), new Vector2(xStart + (xSpace * (i % column)), yStart + (ySpace * (i / column))), Quaternion.identity);
         }
     }
 
@@ -53,14 +60,6 @@ public class SquareSpawner : MonoBehaviour
             return square;
             
         }
-        else if(square.GetIsGig() == true && allowedGigs > 0)
-        {
-            square.SetMyEncounter(allowedGigs);
-            allowedGigs--;
-            squares.Remove(square);
-            return square; 
-
-        }
         else if (square.GetIsGig() == false && square.GetIsEncounter() == false)
         {
             return square;
@@ -69,9 +68,17 @@ public class SquareSpawner : MonoBehaviour
         {
             return GenerateRandomSquare();
         }
-        
-            
-        
-        
+
     }
+
+
+         /*   else if(square.GetIsGig() == true && allowedGigs > 0)
+        {
+            square.SetMyEncounter(allowedGigs);
+            allowedGigs--;
+            squares.Remove(square);
+            return square; 
+
+        }
+         */
 }
