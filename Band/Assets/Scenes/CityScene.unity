@@ -3596,9 +3596,37 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1773240776}
     - target: {fileID: 2176807609675388882, guid: 4c32f6d68de84451e85b77b4bb28ef82, type: 3}
+      propertyPath: lowerPos.x
+      value: -8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2176807609675388882, guid: 4c32f6d68de84451e85b77b4bb28ef82, type: 3}
+      propertyPath: lowerPos.y
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2176807609675388882, guid: 4c32f6d68de84451e85b77b4bb28ef82, type: 3}
+      propertyPath: moveAmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2176807609675388882, guid: 4c32f6d68de84451e85b77b4bb28ef82, type: 3}
+      propertyPath: upperPos.x
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2176807609675388882, guid: 4c32f6d68de84451e85b77b4bb28ef82, type: 3}
+      propertyPath: upperPos.y
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2176807609675388882, guid: 4c32f6d68de84451e85b77b4bb28ef82, type: 3}
       propertyPath: myEncounter
       value: 
       objectReference: {fileID: 1264912049}
+    - target: {fileID: 2176807609675388882, guid: 4c32f6d68de84451e85b77b4bb28ef82, type: 3}
+      propertyPath: startPosition.x
+      value: -8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2176807609675388882, guid: 4c32f6d68de84451e85b77b4bb28ef82, type: 3}
+      propertyPath: startPosition.y
+      value: -5
+      objectReference: {fileID: 0}
     - target: {fileID: 2176807609675388883, guid: 4c32f6d68de84451e85b77b4bb28ef82, type: 3}
       propertyPath: m_RootOrder
       value: 3

@@ -24,7 +24,20 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private EncounterHandler eh;//Responsible for hiding and showing encounters found by player
 
+    [SerializeField]
+    private Vector2 startPosition;//The starting place for player
 
+
+    [SerializeField]
+    private Vector2 lowerPos;//Acts as the lower x and y bound of the grid
+
+    [SerializeField]
+    private Vector2 upperPos;//Acts as the upper x and y bound of the grid 
+
+    private void Start()
+    {
+        transform.position = startPosition; 
+    }
     //Enables movement up, down, left, right
     private void OnEnable()
     {
@@ -67,9 +80,9 @@ public class PlayerMovement : MonoBehaviour
         // true if position is within bounds, false otherwise
         // right now: assumes bounds are within (-10, -10) to (10, 10)
 
-        float gridSize = 10; // Assuming the grid size is 10x10
-        return position.x >= -gridSize && position.x <= gridSize &&
-               position.y >= -gridSize && position.y <= gridSize;
+        //float gridSize = 10; // Assuming the grid size is 10x10
+        return position.x >= lowerPos.x && position.x <= upperPos.x &&
+               position.y >= lowerPos.y && position.y <= upperPos.y;
     }
 
     //Handles collisions for encounter and gig squares 
