@@ -42,6 +42,7 @@ public class GameStateManager : MonoBehaviour
         }
 
         state = GAMESTATE.MENU;
+        ResetValues();
 
     }
 
@@ -98,7 +99,7 @@ public class GameStateManager : MonoBehaviour
     //Resets the game values 
     public static void ResetValues()
     {
-        money = 0;
+        money = 500;
         fans = 0;
     }
 
