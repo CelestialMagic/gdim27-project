@@ -862,6 +862,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 411936306}
   m_CullTransparentMesh: 1
+--- !u!114 &415079358 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2176807609675388882, guid: 4c32f6d68de84451e85b77b4bb28ef82, type: 3}
+  m_PrefabInstance: {fileID: 2176807609669200385}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 380a94b74dd3a4baabc469e5d11941b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &616051516
 GameObject:
   m_ObjectHideFlags: 0
@@ -3596,6 +3607,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1773240776}
     - target: {fileID: 2176807609675388882, guid: 4c32f6d68de84451e85b77b4bb28ef82, type: 3}
+      propertyPath: delayTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2176807609675388882, guid: 4c32f6d68de84451e85b77b4bb28ef82, type: 3}
       propertyPath: lowerPos.x
       value: -8
       objectReference: {fileID: 0}
@@ -3605,7 +3620,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2176807609675388882, guid: 4c32f6d68de84451e85b77b4bb28ef82, type: 3}
       propertyPath: moveAmount
-      value: 1
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 2176807609675388882, guid: 4c32f6d68de84451e85b77b4bb28ef82, type: 3}
       propertyPath: upperPos.x
@@ -3680,6 +3695,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4522452356064297792, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 415079358}
     - target: {fileID: 4522452356064297792, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
       propertyPath: endingSquare
       value: 

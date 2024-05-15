@@ -31,17 +31,40 @@ public class SquareSpawner : MonoBehaviour
     [SerializeField]
     private Square endingSquare;//The ending square of the grid
 
+    [SerializeField]
+    private PlayerMovement player;
+
+    private GameObject g;
+    private Square s;
+
     // Start is called before the first frame update
     void Start()
     {
+        
         for (int i = 0; i < column * row; i++)
         {
             if (i == 0)
-                Instantiate(startingSquare, new Vector2(xStart + (xSpace * (i % column)), yStart + (ySpace * (i / column))), Quaternion.identity);
+            {
+                
+                s = Instantiate(startingSquare, new Vector2(xStart + (xSpace * (i % column)), yStart + (ySpace * (i / column))), Quaternion.identity);
+                g = s.gameObject;
+                Debug.Log(g);
+                player.AddMoveableSquare(g);
+            }
             else if (i == column * row - 1)
-                Instantiate(endingSquare, new Vector2(xStart + (xSpace * (i % column)), yStart + (ySpace * (i / column))), Quaternion.identity);
+            {
+                s = Instantiate(endingSquare, new Vector2(xStart + (xSpace * (i % column)), yStart + (ySpace * (i / column))), Quaternion.identity);
+                g = s.gameObject;
+                player.AddMoveableSquare(g);
+
+            }
             else
-                Instantiate(GenerateRandomSquare(), new Vector2(xStart + (xSpace * (i % column)), yStart + (ySpace * (i / column))), Quaternion.identity);
+            {
+                s = Instantiate(GenerateRandomSquare(), new Vector2(xStart + (xSpace * (i % column)), yStart + (ySpace * (i / column))), Quaternion.identity);
+                g = s.gameObject;
+                player.AddMoveableSquare(g);
+            }
+                
         }
     }
 
