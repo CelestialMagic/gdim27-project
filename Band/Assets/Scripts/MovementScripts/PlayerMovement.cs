@@ -245,7 +245,7 @@ public class PlayerMovement : MonoBehaviour
         {
              myGig.text = "Gig # " + collision.gameObject.GetComponent<Square>().GetMyEncounter();
             GameStateManager.SetMoney(encounterMoneyDeduction * 2);
-        }else if(collision.gameObject.tag == "Empty")
+        }else if(collision.gameObject.tag == "Empty" || collision.gameObject.tag == "Inactive")
         {
             GameStateManager.SetMoney(encounterMoneyDeduction);
         }
@@ -256,9 +256,7 @@ public class PlayerMovement : MonoBehaviour
     //Delays Movement
     private IEnumerator DelayMove(Vector3 position)
     {
-        Debug.Log("Delaying!");
         yield return new WaitForSeconds(delayTime);
-        Debug.Log("Finished Delaying!");
         gameObject.transform.position = position;
 
 
