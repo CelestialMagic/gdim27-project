@@ -50,10 +50,16 @@ public class PlayerMovement : MonoBehaviour
         Debug.Log(moveablePlaces.Count);
     }
     //Enables movement up, down, left, right
-    private void OnEnable()
+    public void OnEnable()
     {
         upwardMovement.Enable();
         sideMovement.Enable();
+    }
+
+    public void OnDisable()
+    {
+        upwardMovement.Disable();
+        sideMovement.Disable();
     }
 
     // Update is called once per frame
@@ -237,6 +243,7 @@ public class PlayerMovement : MonoBehaviour
             eh.CurrentEncounter(currentEncounter);
             currentEncounter.InactiveEncounter();
             GameStateManager.SetMoney(encounterMoneyDeduction);
+            OnDisable();
 
 
             //myEncounter.text = "Encounter # " + collision.gameObject.GetComponent<Square>().GetMyEncounter();
