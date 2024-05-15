@@ -39,7 +39,10 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 upperPos;//Acts as the upper x and y bound of the grid
 
     [SerializeField]
-    private float delayTime;
+    private float delayTime;//Delays game 
+
+    [SerializeField]
+    private int encounterMoneyDeduction;//Decrements the money for encounters
 
     private void Start()
     {
@@ -131,7 +134,7 @@ public class PlayerMovement : MonoBehaviour
     //Determines what is the closest square below the square
     private GameObject ReturnClosestYBelowSquare()
     {
-        List<GameObject> spots = new List<GameObject>();
+        
         GameObject smallestDist = availableSquares[0];
 
         foreach (GameObject place in availableSquares)
@@ -152,7 +155,7 @@ public class PlayerMovement : MonoBehaviour
     //Determines the closest square above the player
     private GameObject ReturnClosestYAboveSquare()
     {
-        List<GameObject> spots = new List<GameObject>();
+        
         GameObject smallestDist = availableSquares[0];
 
         foreach (GameObject place in availableSquares)
@@ -174,7 +177,7 @@ public class PlayerMovement : MonoBehaviour
     //Determines the closest square to the left of the player
     private GameObject ReturnClosestXBelowSquare()
     {
-        List<GameObject> spots = new List<GameObject>();
+        
         GameObject smallestDist = availableSquares[0];
 
         foreach (GameObject place in availableSquares)
@@ -195,7 +198,7 @@ public class PlayerMovement : MonoBehaviour
     //Determines the closest square to the right of the player 
     private GameObject ReturnClosestXAboveSquare()
     {
-        List<GameObject> spots = new List<GameObject>();
+        
         GameObject smallestDist = availableSquares[0];
 
         foreach (GameObject place in availableSquares)
@@ -233,6 +236,7 @@ public class PlayerMovement : MonoBehaviour
             Encounter currentEncounter = collision.gameObject.GetComponent<Encounter>();
             eh.CurrentEncounter(currentEncounter);
             currentEncounter.InactiveEncounter();
+            GameStateManager.SetMoney(encounterMoneyDeduction);
 
 
             //myEncounter.text = "Encounter # " + collision.gameObject.GetComponent<Square>().GetMyEncounter();
@@ -240,7 +244,12 @@ public class PlayerMovement : MonoBehaviour
         else if (collision.gameObject.tag == "Gig")
         {
              myGig.text = "Gig # " + collision.gameObject.GetComponent<Square>().GetMyEncounter();
+            GameStateManager.SetMoney(encounterMoneyDeduction * 2);
+        }else if(collision.gameObject.tag == "Empty")
+        {
+            GameStateManager.SetMoney(encounterMoneyDeduction);
         }
+        
 
     }
 

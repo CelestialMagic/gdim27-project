@@ -677,8 +677,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -812,8 +812,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3537,8 +3537,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3642,6 +3642,10 @@ PrefabInstance:
       propertyPath: startPosition.y
       value: -5
       objectReference: {fileID: 0}
+    - target: {fileID: 2176807609675388882, guid: 4c32f6d68de84451e85b77b4bb28ef82, type: 3}
+      propertyPath: encounterMoneyDeduction
+      value: -25
+      objectReference: {fileID: 0}
     - target: {fileID: 2176807609675388883, guid: 4c32f6d68de84451e85b77b4bb28ef82, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -3706,7 +3710,7 @@ PrefabInstance:
     - target: {fileID: 4522452356064297792, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
       propertyPath: startingSquare
       value: 
-      objectReference: {fileID: 8791717023847810750, guid: d7cbb651d0380474584d2ec6c49f09ed, type: 3}
+      objectReference: {fileID: 7774984846822624991, guid: 9233418b652ef44a18b8fa211cdd7216, type: 3}
     - target: {fileID: 4522452356064297792, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
       propertyPath: allowedEncounters
       value: 5

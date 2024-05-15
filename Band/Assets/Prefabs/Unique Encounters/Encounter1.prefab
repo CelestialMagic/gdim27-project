@@ -231,16 +231,21 @@ MonoBehaviour:
   encounterNum: 0
   icon: {fileID: 5303594057045750835}
   inactiveColor: {r: 0.19401924, g: 0.3773585, b: 0.19811487, a: 1}
-  choiceAFans: 20
-  choiceAMoney: 100
-  choiceBFans: -20
-  choiceBMoney: -100
-  encounterName: This is Encounter 1
-  encounterText: Text Goes Here
-  choiceAText: Choice A
-  choiceBText: Choice B
-  choiceAFinish: You chose Choice A
-  choiceBFinish: You chose Choice B
+  choiceAFans: -30
+  choiceAMoney: 200
+  choiceBFans: 30
+  choiceBMoney: 0
+  encounterName: 'The Muse  '
+  encounterText: 'You had a flash of inspiration for a new song to add to your setlist,
+    but the other members of the band feel it could be too... experimental to play
+    in its current state. Still, they''re willing to try if you are. So what''s your
+    call? '
+  choiceAText: 'Go for it '
+  choiceBText: 'Hold off for now '
+  choiceAFinish: Well, as expected, your fans weren't exactly too partial to it...
+    but the higher-ups loved your new sound! Every cloud has its silver lining, and
+    all that.
+  choiceBFinish: 'Well, there''s always next time. '
 --- !u!1 &3318638452278850611
 GameObject:
   m_ObjectHideFlags: 0
