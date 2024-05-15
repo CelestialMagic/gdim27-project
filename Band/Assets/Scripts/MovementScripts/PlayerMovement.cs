@@ -63,12 +63,12 @@ public class PlayerMovement : MonoBehaviour
         //transform.Translate(sideMovement.ReadValue<float>() * Time.deltaTime * moveAmount, upwardMovement.ReadValue<float>() * Time.deltaTime * moveAmount, 0);
 
         // Check if there is any input for movement
-        if (sideMovement.ReadValue<float>() == 1)
+        if (sideMovement.ReadValue<float>() > 0)
         {
             StartCoroutine(DelayMove(ReturnClosestXAboveSquare().transform.position));
             EraseAvailableSquares();
         }
-        else if (sideMovement.ReadValue<float>() == -1)
+        else if (sideMovement.ReadValue<float>() < 0)
         {
             
             StartCoroutine(DelayMove(ReturnClosestXBelowSquare().transform.position));
@@ -114,6 +114,7 @@ public class PlayerMovement : MonoBehaviour
                position.y >= lowerPos.y && position.y <= upperPos.y;
     }
 
+    //Adds available squares
     private void CheckForAvailableSquares()
     {
         foreach(GameObject g in moveablePlaces)
@@ -126,7 +127,8 @@ public class PlayerMovement : MonoBehaviour
 
         }
     }
-    
+
+    //Determines what is the closest square below the square
     private GameObject ReturnClosestYBelowSquare()
     {
         List<GameObject> spots = new List<GameObject>();
@@ -144,16 +146,10 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        foreach (GameObject spot in spots)
-        {
-            if (smallestDist.transform.position.y == transform.position.y)
-                smallestDist = spot;
-            if (transform.position.y - spot.transform.position.y > transform.position.y - smallestDist.transform.position.y)
-                smallestDist = spot;
-        }
         return smallestDist;
     }
 
+    //Determines the closest square above the player
     private GameObject ReturnClosestYAboveSquare()
     {
         List<GameObject> spots = new List<GameObject>();
@@ -171,20 +167,16 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        foreach (GameObject spot in spots)
-        {
-            if (smallestDist.transform.position.y == transform.position.y)
-                smallestDist = spot;
-            if (transform.position.y - spot.transform.position.y < transform.position.y - smallestDist.transform.position.y)
-                smallestDist = spot;
-        }
+
         return smallestDist;
     }
 
+    //Determines the closest square to the left of the player
     private GameObject ReturnClosestXBelowSquare()
     {
         List<GameObject> spots = new List<GameObject>();
         GameObject smallestDist = availableSquares[0];
+
         foreach (GameObject place in availableSquares)
         {
             if (place.transform.position.x == transform.position.x)
@@ -193,21 +185,14 @@ public class PlayerMovement : MonoBehaviour
             }
             else if (place.transform.position.x < transform.position.x && place.transform.position.y == transform.position.y)
             {
-                spots.Add(place);
+                return place;
             }
         }
 
-        
-        foreach (GameObject spot in spots)
-        {
-            if (smallestDist.transform.position.x == transform.position.x)
-                smallestDist = spot;
-            if (transform.position.x - spot.transform.position.x > transform.position.x - smallestDist.transform.position.x)
-                smallestDist = spot;
-        }
         return smallestDist;
     }
 
+    //Determines the closest square to the right of the player 
     private GameObject ReturnClosestXAboveSquare()
     {
         List<GameObject> spots = new List<GameObject>();
@@ -224,24 +209,17 @@ public class PlayerMovement : MonoBehaviour
                 return place;
             }
         }
-
-        foreach (GameObject spot in spots)
-        {
-            if (smallestDist.transform.position.x == transform.position.x)
-                smallestDist = spot;
-            if (transform.position.x - spot.transform.position.x < transform.position.x - smallestDist.transform.position.x)
-                smallestDist = spot;
-        }
         return smallestDist;
     }
 
 
-
+    //Resets available squares
     private void EraseAvailableSquares()
     {
         availableSquares.Clear();
     }
 
+    //Retrieves moveable squares from the Square Spawner
     public void AddMoveableSquare(GameObject s)
     {
         moveablePlaces.Add(s);
@@ -266,6 +244,7 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    //Delays Movement
     private IEnumerator DelayMove(Vector3 position)
     {
         Debug.Log("Delaying!");
