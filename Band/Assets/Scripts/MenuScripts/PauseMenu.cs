@@ -22,7 +22,7 @@ public class PauseMenu : MenuNavigation
     }
 
     //Pauses the Game and Shows the Menu
-    private void PauseGame()
+    protected void PauseGame()
     {
         Time.timeScale = 0;
         pauseMenu.SetActive(true);
@@ -30,7 +30,7 @@ public class PauseMenu : MenuNavigation
     }
 
     //Unpauses the Game and Hides the Menu
-    private void UnpauseGame()
+    protected void UnpauseGame()
     {
         Time.timeScale = 1;
         pauseMenu.SetActive(false);

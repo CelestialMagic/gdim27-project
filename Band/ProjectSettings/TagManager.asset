@@ -9,6 +9,8 @@ TagManager:
   - Inactive
   - Empty
   - Border
+  - Obstacle
+  - Collect
   layers:
   - Default
   - TransparentFX
