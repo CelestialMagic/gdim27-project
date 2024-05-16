@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 5609511524587702883}
   - component: {fileID: 3862704355550403617}
   m_Layer: 6
-  m_Name: Encounter2
+  m_Name: StreetJamEncounter
   m_TagString: Encounter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -265,16 +265,21 @@ MonoBehaviour:
   encounterNum: 1
   icon: {fileID: 9172936006353377254}
   inactiveColor: {r: 0.19401924, g: 0.3773585, b: 0.19811487, a: 1}
-  choiceAFans: 20
-  choiceAMoney: 100
-  choiceBFans: -20
-  choiceBMoney: -100
+  choiceAFans: 30
+  choiceAMoney: 0
+  choiceBFans: 0
+  choiceBMoney: 50
   encounterName: 'Street Jam '
-  encounterText: Text Goes Here
-  choiceAText: Choice A
-  choiceBText: Choice B
-  choiceAFinish: You chose Choice A
-  choiceBFinish: You chose Choice B
+  encounterText: On your way to a practice session with the rest of the band, you
+    pass by a street performance. Since you've already got your instrument, it might
+    be a good idea to join in.Text Goes Here
+  choiceAText: Join in
+  choiceBText: Leave it be
+  choiceAFinish: "You couldn't stay long, but it seems like some of the members of
+    the crowd liked your style, and are now fans of your work!\t Gain 30 Fans"
+  choiceBFinish: Some people don't like being intruded on. And hey, with the extra
+    time you didn't spend performing there, you got in some nice practice with the
+    band. That oughta rake in some more dough. Gain 50 Revenue
 --- !u!1 &2304018191394800670
 GameObject:
   m_ObjectHideFlags: 0

@@ -244,8 +244,8 @@ MonoBehaviour:
   choiceBText: 'Hold off for now '
   choiceAFinish: Well, as expected, your fans weren't exactly too partial to it...
     but the higher-ups loved your new sound! Every cloud has its silver lining, and
-    all that.
-  choiceBFinish: 'Well, there''s always next time. '
+    all that. Gain 200 Revenue, but lose 30 Fans
+  choiceBFinish: 'Well, there''s always next time. Gain 30 Fans '
 --- !u!1 &3318638452278850611
 GameObject:
   m_ObjectHideFlags: 0
