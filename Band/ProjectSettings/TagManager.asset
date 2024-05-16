@@ -8,6 +8,7 @@ TagManager:
   - Gig
   - Inactive
   - Empty
+  - Border
   layers:
   - Default
   - TransparentFX
