@@ -183,20 +183,20 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Use WASD to move
 
-    Each space you move will cost 25 Revenue. Make
-    sure you manage your money!
+    Each space you move will cost 25 Revenue. Make sure
+    you manage your money!
 
-    Encounter spaces will present you with two
-    choices that affect your Revenue and Fans.
+    Encounter spaces will present you with two choices
+    that affect your Revenue and Fans.
 
-    Reach the Gig at the top right
-    corner to end the map. Make sure you plot out enough money to reach it safely.
-    It costs 50 Revenue to enter the Gig once you reach it.
+    Reach the Gig at the top right corner
+    to end the map. Make sure you plot out enough money to reach it safely. It costs
+    50 Revenue to enter the Gig once you reach it.
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a098e8c2acc6849ffbf343b9df1921e0, type: 2}
+  m_sharedMaterial: {fileID: -6840599003363183568, guid: a098e8c2acc6849ffbf343b9df1921e0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

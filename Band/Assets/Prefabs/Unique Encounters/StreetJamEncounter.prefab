@@ -272,7 +272,7 @@ MonoBehaviour:
   encounterName: 'Street Jam '
   encounterText: On your way to a practice session with the rest of the band, you
     pass by a street performance. Since you've already got your instrument, it might
-    be a good idea to join in.Text Goes Here
+    be a good idea to join in.
   choiceAText: Join in
   choiceBText: Leave it be
   choiceAFinish: "You couldn't stay long, but it seems like some of the members of

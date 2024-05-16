@@ -127,5 +127,8 @@ MonoBehaviour:
   isEncounter: 0
   isGig: 1
   encounterNum: 0
-  gigName: Gig Name
-  gigText: Gig Text Here
+  gigName: 'Back to your Roots '
+  gigText: "You get a gig at the local music shop where you bought your guitar way
+    back when you started this whole band.  Looking at your watch, you realize that
+    this gig is in\u2026 TEN MINUTES!!! In the blink of an eye, you and your bandmates
+    hop in the van, hoping to make it in time. "

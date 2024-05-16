@@ -231,10 +231,10 @@ MonoBehaviour:
   encounterNum: 1
   icon: {fileID: 1794801589719076034}
   inactiveColor: {r: 0.19401924, g: 0.3773585, b: 0.19811487, a: 1}
-  choiceAFans: 20
-  choiceAMoney: 100
-  choiceBFans: -20
-  choiceBMoney: -100
+  choiceAFans: 0
+  choiceAMoney: 10
+  choiceBFans: 40
+  choiceBMoney: 0
   encounterName: Cashin' Out
   encounterText: While walking around the city, you notice a discarded wallet that
     no one else seems to be paying any mind. You might be able to fish some cash
