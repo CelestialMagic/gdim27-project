@@ -9,6 +9,6 @@ public class MinigameScore : ScoreDisplay
     // Update is called once per frame
     protected override void Update()
     {
-        revenueText.text = $"Earned Money: { player.GetMinigameMoney()}";
+        revenueText.text = $"Earned Money: ${ player.GetMinigameMoney()}";
     }
 }

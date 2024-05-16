@@ -2,17 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Gig : MonoBehaviour
+public class Gig : Square
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField]
+    private string gigName, gigText;
+
+
+    public string GetGigName()
     {
-        
+        return gigName;
     }
 
-    // Update is called once per frame
-    void Update()
+    public string GetGigText()
     {
-        
+        return gigText;
     }
+
 }

@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7576064428674943334}
   - component: {fileID: 52190734301024947}
-  - component: {fileID: 1640713687269901606}
   - component: {fileID: -298565909930163861}
+  - component: {fileID: 5126283960067607992}
   m_Layer: 6
   m_Name: GigSquare
   m_TagString: Gig
@@ -86,21 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1640713687269901606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7309790120637949959}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a6b94ac018294162809f6dea2cde337, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isEncounter: 0
-  isGig: 1
-  encounterNum: 0
 --- !u!61 &-298565909930163861
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -127,3 +112,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &5126283960067607992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7309790120637949959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e96e34072c494b5a98502e54b35dd44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEncounter: 0
+  isGig: 1
+  encounterNum: 0
+  gigName: Gig Name
+  gigText: Gig Text Here

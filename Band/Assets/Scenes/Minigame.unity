@@ -325,7 +325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameScene: 
-  titleScene: 
+  titleScene: EndScene
   tutorialScene: 
   highScore: 
   pauseMenu: {fileID: 306340988}
@@ -1229,7 +1229,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1389405275}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 267256045}
+        m_TargetAssemblyTypeName: MinigamePause, Assembly-CSharp
+        m_MethodName: GoToTitle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1389405275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1391,7 +1403,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 5
 --- !u!4 &1700562481
 Transform:
   m_ObjectHideFlags: 0

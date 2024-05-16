@@ -29,6 +29,9 @@ public class PlayerMovement : MonoBehaviour
     private EncounterHandler eh;//Responsible for hiding and showing encounters found by player
 
     [SerializeField]
+    private GigHandler gh;
+
+    [SerializeField]
     private Vector2 startPosition;//The starting place for player
 
 
@@ -49,6 +52,7 @@ public class PlayerMovement : MonoBehaviour
         transform.position = startPosition;
         Debug.Log(moveablePlaces.Count);
     }
+
     //Enables movement up, down, left, right
     public void OnEnable()
     {
@@ -62,11 +66,17 @@ public class PlayerMovement : MonoBehaviour
         sideMovement.Disable();
     }
 
+    private void Awake()
+    {
+        OnEnable();
+    }
+
+
     // Update is called once per frame
     void Update()
     {
-        float horizontalInput = sideMovement.ReadValue<float>();
-        float verticalInput = upwardMovement.ReadValue<float>();
+        Debug.Log(upwardMovement.enabled);
+        Debug.Log(sideMovement.enabled);
         CheckForAvailableSquares();
         //OLD CODE!
         //transform.Translate(sideMovement.ReadValue<float>() * Time.deltaTime * moveAmount, upwardMovement.ReadValue<float>() * Time.deltaTime * moveAmount, 0);
@@ -250,11 +260,18 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (collision.gameObject.tag == "Gig")
         {
-             myGig.text = "Gig # " + collision.gameObject.GetComponent<Square>().GetMyEncounter();
+
+            Gig currentGig = collision.gameObject.GetComponent<Gig>();
+            gh.CurrentGig(currentGig);
             GameStateManager.SetMoney(encounterMoneyDeduction * 2);
+
         }else if(collision.gameObject.tag == "Empty" || collision.gameObject.tag == "Inactive")
         {
             GameStateManager.SetMoney(encounterMoneyDeduction);
+        }
+        else if(collision.gameObject.tag == "Untagged")
+        {
+            OnEnable();
         }
         
 

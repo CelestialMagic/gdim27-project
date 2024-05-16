@@ -8,6 +8,10 @@ public class PauseMenu : MenuNavigation
     [SerializeField]
     private GameObject pauseMenu;//A GameObject representing the Pause Menu
 
+    private void Start()
+    {
+        UnpauseGame();
+    }
     //The Update Method that checks for escape key (overrides MenuNavigation)
     protected override void Update()
     {
@@ -42,7 +46,6 @@ public class PauseMenu : MenuNavigation
     {
         UnpauseGame();
         GameStateManager.Menu();
-        GameStateManager.SetFinalScore();
         GameStateManager.ResetValues();
         SceneManager.LoadScene(titleScene);
         
