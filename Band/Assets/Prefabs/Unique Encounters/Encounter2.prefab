@@ -269,7 +269,7 @@ MonoBehaviour:
   choiceAMoney: 100
   choiceBFans: -20
   choiceBMoney: -100
-  encounterName: This is Encounter 2
+  encounterName: 'Street Jam '
   encounterText: Text Goes Here
   choiceAText: Choice A
   choiceBText: Choice B

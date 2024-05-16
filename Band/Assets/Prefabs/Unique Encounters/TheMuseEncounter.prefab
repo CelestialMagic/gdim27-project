@@ -114,7 +114,7 @@ GameObject:
   - component: {fileID: 8867036818206517686}
   - component: {fileID: 238096108439437300}
   m_Layer: 6
-  m_Name: Encounter1
+  m_Name: TheMuseEncounter
   m_TagString: Encounter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
