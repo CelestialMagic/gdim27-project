@@ -325,7 +325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameScene: 
-  titleScene: EndScene
+  titleScene: FinalGigChoice
   tutorialScene: 
   highScore: 
   pauseMenu: {fileID: 306340988}

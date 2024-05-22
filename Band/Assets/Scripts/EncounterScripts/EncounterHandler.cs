@@ -8,20 +8,24 @@ public class EncounterHandler : MonoBehaviour
 {
     //The GameObject containing the Encounter UI
     [SerializeField]
-    private GameObject encounterUI;
+    private GameObject encounterUI, oneChoiceUI;
 
     [SerializeField]
     private GameObject afterChoiceUI;
 
     //Text used by the Encounter UI
     [SerializeField]
-    private TMP_Text encounterTitle, encounterText, choiceAText, choiceBText, epilogue;
+    private TMP_Text encounterTitle, encounterText, choiceAText, choiceBText, epilogue, oneChoiceTitle, oneChoiceText, oneChoiceOption, oneChoiceEpilogue;
 
     //Buttons used by the Encounter UI
     [SerializeField]
-    private Button choiceAButton, choiceBButton;
+    private Button choiceAButton, choiceBButton, oneChoiceButton;
 
-    private Encounter currentEncounter;//An encounter representing the current collided 
+    private Encounter currentEncounter;//An encounter representing the current collided
+
+    private OneChoiceEncounter oneChoice;//A holder for one choice encounters
+
+
 
     //Sets the Encounter UI based on current encounter
     public void CurrentEncounter(Encounter encounter)
@@ -39,6 +43,22 @@ public class EncounterHandler : MonoBehaviour
         choiceBButton.onClick.AddListener(delegate { currentEncounter.ChoiceB(); });
 
     }
+
+    //Sets UI for singular choice encounters 
+    public void CurrentOneChoiceEncounter(OneChoiceEncounter oc)
+    {
+        oneChoiceUI.SetActive(true);
+        oneChoice = oc;
+        //Assigns the current encounters values to OneChoiceEncounter UI
+        oneChoiceTitle.text = oneChoice.GetEncounterName();
+        oneChoiceText.text = oneChoice.GetEncounterText();
+        oneChoiceOption.text = oneChoice.GetChoiceAText();
+
+        //Adds a listener to button based on OneChoiceEncounter 
+        oneChoiceButton.onClick.AddListener(delegate { oneChoice.ChoiceA(); });
+
+    }
+
 
     //Carries out logic based on choice made 
     public void SelectedChoiceA()
@@ -59,11 +79,21 @@ public class EncounterHandler : MonoBehaviour
 
     }
 
+    public void SelectedOneChoice()
+    {
+       oneChoiceButton.onClick.RemoveAllListeners();
+       oneChoiceUI.SetActive(false);
+       ActivateAfterMenu();
+       oneChoiceEpilogue.text = oneChoice.GetChoiceAFinish();
+
+    }
+
     //Removes button from having same choices as before
     public void UnsubscribeButtons()
     {
         choiceAButton.onClick.RemoveAllListeners();
         choiceBButton.onClick.RemoveAllListeners();
+        oneChoiceButton.onClick.RemoveAllListeners();
     }
 
     //Deactivates EncounterUI

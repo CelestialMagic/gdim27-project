@@ -255,8 +255,13 @@ public class PlayerMovement : MonoBehaviour
             GameStateManager.SetMoney(encounterMoneyDeduction);
             OnDisable();
 
-
-            //myEncounter.text = "Encounter # " + collision.gameObject.GetComponent<Square>().GetMyEncounter();
+        }else if (collision.gameObject.tag == "OneChoice")
+        {
+            OneChoiceEncounter currentEncounter = collision.gameObject.GetComponent<OneChoiceEncounter>();
+            eh.CurrentOneChoiceEncounter(currentEncounter);
+            currentEncounter.InactiveEncounter();
+            GameStateManager.SetMoney(encounterMoneyDeduction);
+            OnDisable();
         }
         else if (collision.gameObject.tag == "Gig")
         {
@@ -265,7 +270,21 @@ public class PlayerMovement : MonoBehaviour
             gh.CurrentGig(currentGig);
             GameStateManager.SetMoney(encounterMoneyDeduction * 2);
 
-        }else if(collision.gameObject.tag == "Empty" || collision.gameObject.tag == "Inactive")
+            GameStateManager.SetGigChoiceA(currentGig.GetOptionAText());
+            GameStateManager.SetGigChoiceB(currentGig.GetOptionBText());
+            GameStateManager.SetGigText(currentGig.GetGigChoiceText());
+            GameStateManager.SetEndingA(currentGig.GetOptionAEpilogue());
+            GameStateManager.SetEndingB(currentGig.GetOptionBEpilogue());
+
+            GameStateManager.SetAMoney(currentGig.GetOptionAMoney());
+            GameStateManager.SetBMoney(currentGig.GetOptionBMoney());
+
+            GameStateManager.SetAFans(currentGig.GetOptionAFans());
+            GameStateManager.SetBFans(currentGig.GetOptionBFans());
+
+
+        }
+        else if(collision.gameObject.tag == "Empty" || collision.gameObject.tag == "Inactive")
         {
             GameStateManager.SetMoney(encounterMoneyDeduction);
         }

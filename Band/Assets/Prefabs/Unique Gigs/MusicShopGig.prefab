@@ -128,7 +128,20 @@ MonoBehaviour:
   isGig: 1
   encounterNum: 0
   gigName: 'Back to your Roots '
+  optionAText: Option A
+  optionBText: Option B
   gigText: "You get a gig at the local music shop where you bought your guitar way
-    back when you started this whole band.  Looking at your watch, you realize that
+    back when you started this whole band. Looking at your watch, you realize that
     this gig is in\u2026 TEN MINUTES!!! In the blink of an eye, you and your bandmates
-    hop in the van, hoping to make it in time. "
+    hop in the van, hoping to make it in time. \n"
+  gigChoiceText: 'After holding a heartstring-tugging performance, the owner asks
+    to have a guitar signed by you to hang in the store. Hailed as a hometown hero,
+    your popularity increases significantly!
+
+'
+  optionAEpilogue: Option A Ending Here
+  optionBEpilogue: Option B Ending Here
+  optionAMoney: -50
+  optionAFans: 30
+  optionBMoney: 60
+  optionBFans: 20

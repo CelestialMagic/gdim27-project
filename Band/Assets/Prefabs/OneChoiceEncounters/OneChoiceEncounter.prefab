@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 3258997977716622728}
   - component: {fileID: 4945150456922168925}
   - component: {fileID: 8517601654271575000}
-  - component: {fileID: 1042426856924386714}
+  - component: {fileID: 5564602257948158097}
   m_Layer: 6
-  m_Name: TheMuseEncounter 1
-  m_TagString: Encounter
+  m_Name: OneChoiceEncounter
+  m_TagString: OneChoice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0.44379663, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 0.7327335, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -113,7 +113,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1042426856924386714
+--- !u!114 &5564602257948158097
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -122,29 +122,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 2407253661071205609}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a520a1c83ac50479786e70fb186ef63f, type: 3}
+  m_Script: {fileID: 11500000, guid: 3c8d07eb7213544829dac87e8dc9dd0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isEncounter: 1
   isGig: 0
-  encounterNum: 0
+  encounterNum: 1
   icon: {fileID: 4945150456922168925}
-  inactiveColor: {r: 0.19401924, g: 0.3773585, b: 0.19811487, a: 1}
-  choiceAFans: -30
-  choiceAMoney: 200
-  choiceBFans: 30
-  choiceBMoney: 0
-  encounterName: 'The Muse  '
-  encounterText: 'You had a flash of inspiration for a new song to add to your setlist,
-    but the other members of the band feel it could be too... experimental to play
-    in its current state. Still, they''re willing to try if you are. So what''s your
-    call? '
-  choiceAText: 'Go for it '
-  choiceBText: 'Hold off for now '
-  choiceAFinish: Well, as expected, your fans weren't exactly too partial to it...
-    but the higher-ups loved your new sound! Every cloud has its silver lining, and
-    all that. Gain 200 Revenue, but lose 30 Fans
-  choiceBFinish: 'Well, there''s always next time. Gain 30 Fans '
+  inactiveColor: {r: 0.19215687, g: 0.3764706, b: 0.2, a: 1}
+  choiceAFans: 0
+  choiceAMoney: -100
+  encounterName: Through The Stringer
+  choiceAText: Buy Strings
+  encounterText: Looks like your equipment needs some maintenance. Surely guitar
+    strings don't run up that high of a price, right...?
+  choiceAFinish: 'After all is said and done, you spend $100 stringing guitars. '
 --- !u!1 &2536861967560810077
 GameObject:
   m_ObjectHideFlags: 0

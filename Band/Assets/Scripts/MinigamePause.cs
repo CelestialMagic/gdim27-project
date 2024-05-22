@@ -22,7 +22,6 @@ public class MinigamePause : PauseMenu
     public override void GoToTitle()
     {
         GameStateManager.SetMoney(player.GetMinigameMoney());
-        GameStateManager.SetFinalScore();
         SceneManager.LoadScene(titleScene);
     }
 }

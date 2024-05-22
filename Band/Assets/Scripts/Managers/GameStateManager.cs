@@ -10,7 +10,9 @@ public class GameStateManager : MonoBehaviour
 
     private static int fans, money, finalFanScore, finalRevenueScore; //Represents the fan and revenue counts
 
-    private static string gigText, gigChoiceA, gigChoiceB; 
+    private static string gigText, gigChoiceA, gigChoiceB, aEnding, bEnding;
+
+    private static int aFans, aMoney, bFans, bMoney;
 
     //An enum that represents the game states. 
     enum GAMESTATE
@@ -21,6 +23,99 @@ public class GameStateManager : MonoBehaviour
         GAMEOVER,
 
     }
+
+    public static string GetGigText()
+    {
+        return gigText;
+    }
+
+    public static string GetGigChoiceA()
+    {
+        return gigChoiceA;
+    }
+
+    public static string GetGigChoiceB()
+    {
+        return gigChoiceB;
+    }
+
+    public static void SetGigChoiceA(string a)
+    {
+        gigChoiceA = a;
+    }
+
+    public static void SetGigChoiceB(string b)
+    {
+        gigChoiceB = b;
+    }
+
+    public static void SetGigText(string t)
+    {
+        gigText = t;
+    }
+
+
+    public static void SetEndingA(string a)
+    {
+        aEnding = a;
+    }
+
+    public static void SetEndingB(string b)
+    {
+        bEnding = b; 
+    }
+
+    public static string GetEndingA()
+    {
+        return aEnding;
+    }
+
+    public static string GetEndingB()
+    {
+        return bEnding;
+    }
+
+
+    public static void SetAFans(int a)
+    {
+        aFans = a;
+    }
+
+    public static void SetBFans(int b)
+    {
+        bFans = b;
+    }
+
+    public static void SetAMoney(int a)
+    {
+        aMoney = a;
+    }
+
+    public static void SetBMoney(int b)
+    {
+        bMoney = b;
+    }
+
+    public static int GetAFans()
+    {
+        return aFans;
+    }
+
+    public static int GetBFans()
+    {
+        return bFans;
+    }
+
+    public static int GetAMoney()
+    {
+        return aMoney;
+    }
+
+    public static int GetBMoney()
+    {
+        return bMoney;
+    }
+
 
 
 
@@ -102,6 +197,13 @@ public class GameStateManager : MonoBehaviour
     {
         money = 500;
         fans = 0;
+        SetGigChoiceA("");
+        SetGigChoiceB("");
+        SetGigText("");
+        SetAFans(0);
+        SetBFans(0);
+        SetAMoney(0);
+        SetBMoney(0);
     }
 
     //Used to set the high score 
