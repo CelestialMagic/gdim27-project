@@ -10,6 +10,7 @@ public class GameStateManager : MonoBehaviour
 
     private static int fans, money, finalFanScore, finalRevenueScore; //Represents the fan and revenue counts
 
+    private static string gigText, gigChoiceA, gigChoiceB; 
 
     //An enum that represents the game states. 
     enum GAMESTATE
@@ -125,4 +126,6 @@ public class GameStateManager : MonoBehaviour
     {
         return PlayerPrefs.GetInt("FinalRevenue");
     }
+
+
 }

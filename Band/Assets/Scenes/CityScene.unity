@@ -4481,6 +4481,10 @@ PrefabInstance:
       propertyPath: squares.Array.data[10]
       value: 
       objectReference: {fileID: 8791717023847810750, guid: d7cbb651d0380474584d2ec6c49f09ed, type: 3}
+    - target: {fileID: 4522452356064297792, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
+      propertyPath: squares.Array.data[11]
+      value: 
+      objectReference: {fileID: 8791717023847810750, guid: d7cbb651d0380474584d2ec6c49f09ed, type: 3}
     - target: {fileID: 4522452356064297793, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
       propertyPath: m_RootOrder
       value: 1

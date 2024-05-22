@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -298565909930163861}
   - component: {fileID: 5126283960067607992}
   m_Layer: 6
-  m_Name: GigSquare
+  m_Name: MusicShopGig
   m_TagString: Gig
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
