@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8517601654271575000}
   - component: {fileID: 5564602257948158097}
   m_Layer: 6
-  m_Name: OneChoiceEncounter
+  m_Name: StringsEncounter
   m_TagString: OneChoice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -136,7 +136,8 @@ MonoBehaviour:
   choiceAText: Buy Strings
   encounterText: Looks like your equipment needs some maintenance. Surely guitar
     strings don't run up that high of a price, right...?
-  choiceAFinish: 'After all is said and done, you spend $100 stringing guitars. '
+  choiceAFinish: "After all is said and done, you spend $100 stringing guitars. \nLose
+    100 Revenue"
 --- !u!1 &2536861967560810077
 GameObject:
   m_ObjectHideFlags: 0
