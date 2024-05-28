@@ -29,7 +29,7 @@ public class SquareSpawner : MonoBehaviour
     private Square startingSquare;//The starting square of the grid
 
     [SerializeField]
-    private Square endingSquare;//The ending square of the grid
+    private List<Square> endingSquare;//The ending square of the grid
 
     [SerializeField]
     private PlayerMovement player;
@@ -53,7 +53,7 @@ public class SquareSpawner : MonoBehaviour
             }
             else if (i == column * row - 1)
             {
-                s = Instantiate(endingSquare, new Vector2(xStart + (xSpace * (i % column)), yStart + (ySpace * (i / column))), Quaternion.identity);
+                s = Instantiate(endingSquare[Random.Range(0, endingSquare.Count)], new Vector2(xStart + (xSpace * (i % column)), yStart + (ySpace * (i / column))), Quaternion.identity); ;
                 g = s.gameObject;
                 player.AddMoveableSquare(g);
 
