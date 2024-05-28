@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8517601654271575000}
   - component: {fileID: 5564602257948158097}
   m_Layer: 6
-  m_Name: MerchEncounter
+  m_Name: CollabEncounter
   m_TagString: OneChoice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24,7 +24,6 @@ Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2407253661071205609}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -130,19 +129,18 @@ MonoBehaviour:
   encounterNum: 1
   icon: {fileID: 4945150456922168925}
   inactiveColor: {r: 0.19215687, g: 0.3764706, b: 0.2, a: 1}
-  choiceAFans: 40
-  choiceAMoney: -200
-  encounterName: Blood, Sweat, n' T-shirts
-  choiceAText: Make some merch
-  encounterText: A good way to spread the word about your band would be to make custom
-    merch, and you've found a relatively cheap production company to produce some
-    T-shirts with.
-  choiceAFinish: 'After cutting a deal with the production company and doling out
-    some shirts at a few of your shows, you''re still a little in the hole, but more
-    and more people are taking notice of the band!
+  choiceAFans: 30
+  choiceAMoney: 0
+  encounterName: Two for One Sale
+  choiceAText: Let's get collabin'
+  encounterText: As you're browsing the local record store looking for inspiration,
+    you happen to reach for the same record as another local up-and-comer. The two
+    of you recognize each other, and you hash out a deal to collaborate on a song.
+  choiceAFinish: 'There was already an intersection between your fanbase and your
+    serendipitous friend''s. Playing together on a track just exposed the two groups
+    to more great music, and caused an influx of new fans for you!
 
-    Lose 200 Revenue, but gain
-    40 Fans'
+    Gain 30 Fans'
 --- !u!1 &2536861967560810077
 GameObject:
   m_ObjectHideFlags: 0
