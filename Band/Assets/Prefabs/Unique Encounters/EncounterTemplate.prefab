@@ -114,7 +114,7 @@ GameObject:
   - component: {fileID: 3061400156996161863}
   - component: {fileID: 5926648180366755589}
   m_Layer: 6
-  m_Name: CashOutEncounter
+  m_Name: EncounterTemplate
   m_TagString: Encounter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -232,21 +232,15 @@ MonoBehaviour:
   icon: {fileID: 1794801589719076034}
   inactiveColor: {r: 0.19401924, g: 0.3773585, b: 0.19811487, a: 1}
   choiceAFans: 0
-  choiceAMoney: 10
-  choiceBFans: 40
+  choiceAMoney: 0
+  encounterName: 
+  choiceAText: 
+  encounterText: 
+  choiceAFinish: 
+  choiceBFans: 0
   choiceBMoney: 0
-  encounterName: Cashin' Out
-  encounterText: While walking around the city, you notice a discarded wallet that
-    no one else seems to be paying any mind. You might be able to fish some cash
-    out of it if you're really desperate, but what's the right thing to do here?
-  choiceAText: Grab the cash
-  choiceBText: Turn it in
-  choiceAFinish: 'Well, though you feel a little shady about it, it really does seem
-    like no one saw you. Mark yourself lucky, and don''t try this at home. Gain 10
-    Revenue '
-  choiceBFinish: 'Yeah, even if you''re feeling hard up for cash, it''s better to
-    avoid cosmic repercussions. One of your fans even records you turning the wallet
-    into the police station for some free publicity! Gain 40 Fans '
+  choiceBText: 
+  choiceBFinish: 
 --- !u!1 &9186323091697880258
 GameObject:
   m_ObjectHideFlags: 0

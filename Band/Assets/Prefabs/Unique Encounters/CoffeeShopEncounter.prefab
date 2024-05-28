@@ -127,25 +127,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEncounter: 1
   isGig: 0
-  encounterNum: 1
+  encounterNum: 6
   icon: {fileID: 9074454157224285815}
   inactiveColor: {r: 0.19401924, g: 0.3773585, b: 0.19811487, a: 1}
   choiceAFans: -10
   choiceAMoney: 200
-  choiceBFans: 20
-  choiceBMoney: 100
   encounterName: Coffee Shop
+  choiceAText: Play to the scene
   encounterText: You landed a gig at that happening coffee shop that all those famous
     musicians played at before they made it big! The manager of La Sinfonia has pretty
     particular taste in music, though. If you play a setlist that the boss likes,
     you'll be able to score some extra cash. Might not be great for showing your
     soon-to-be fans what you're all about, though...
-  choiceAText: Play to the scene
+  choiceAFinish: "A little extra pocket lining never hurt anybody. Here's hoping
+    the fans understand. \nGain 200 Revenue and lose 10 Fans "
+  choiceBFans: 20
+  choiceBMoney: 100
   choiceBText: Rock on like usual
-  choiceAFinish: 'A little extra pocket lining never hurt anybody. Here''s hoping
-    the fans understand. Gain 200 Revenue and lose 10 Fans '
-  choiceBFinish: 'Sticking to your guns lets you give your fans the pop-up coffee
-    shop performance of their lives. Gain 100 Revenue and 20 Fans '
+  choiceBFinish: "Sticking to your guns lets you give your fans the pop-up coffee
+    shop performance of their lives. \nGain 100 Revenue and 20 Fans "
 --- !u!1 &1908089580393223799
 GameObject:
   m_ObjectHideFlags: 0

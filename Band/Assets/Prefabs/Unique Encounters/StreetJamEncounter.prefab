@@ -262,24 +262,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEncounter: 1
   isGig: 0
-  encounterNum: 1
+  encounterNum: 5
   icon: {fileID: 9172936006353377254}
   inactiveColor: {r: 0.19401924, g: 0.3773585, b: 0.19811487, a: 1}
   choiceAFans: 30
   choiceAMoney: 0
-  choiceBFans: 0
-  choiceBMoney: 50
   encounterName: 'Street Jam '
+  choiceAText: Join in
   encounterText: On your way to a practice session with the rest of the band, you
     pass by a street performance. Since you've already got your instrument, it might
     be a good idea to join in.
-  choiceAText: Join in
-  choiceBText: Leave it be
   choiceAFinish: "You couldn't stay long, but it seems like some of the members of
     the crowd liked your style, and are now fans of your work!\t Gain 30 Fans"
-  choiceBFinish: Some people don't like being intruded on. And hey, with the extra
+  choiceBFans: 0
+  choiceBMoney: 50
+  choiceBText: Leave it be
+  choiceBFinish: "Some people don't like being intruded on. And hey, with the extra
     time you didn't spend performing there, you got in some nice practice with the
-    band. That oughta rake in some more dough. Gain 50 Revenue
+    band. That oughta rake in some more dough. \nGain 50 Revenue"
 --- !u!1 &2304018191394800670
 GameObject:
   m_ObjectHideFlags: 0
