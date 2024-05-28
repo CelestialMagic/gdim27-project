@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8517601654271575000}
   - component: {fileID: 5564602257948158097}
   m_Layer: 6
-  m_Name: OneChoiceEncounter 1
+  m_Name: MerchEncounter
   m_TagString: OneChoice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -130,12 +130,16 @@ MonoBehaviour:
   encounterNum: 1
   icon: {fileID: 4945150456922168925}
   inactiveColor: {r: 0.19215687, g: 0.3764706, b: 0.2, a: 1}
-  choiceAFans: 0
-  choiceAMoney: 0
-  encounterName: 
-  choiceAText: 
-  encounterText: 
-  choiceAFinish: 
+  choiceAFans: 40
+  choiceAMoney: -200
+  encounterName: Blood, Sweat, n' T-shirts
+  choiceAText: Make some merch
+  encounterText: A good way to spread the word about your band would be to make custom
+    merch, and you've found a relatively cheap production company to produce some
+    T-shirts with.
+  choiceAFinish: After cutting a deal with the production company and doling out
+    some shirts at a few of your shows, you're still a little in the hole, but more
+    and more people are taking notice of the band!
 --- !u!1 &2536861967560810077
 GameObject:
   m_ObjectHideFlags: 0
