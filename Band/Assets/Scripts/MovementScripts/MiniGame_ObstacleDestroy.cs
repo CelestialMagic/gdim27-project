@@ -13,11 +13,12 @@ public class MiniGame_ObstacleDestroy : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.tag == "Border")
+        if (collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Collect")
         {
-            Destroy(this.gameObject);
+            Debug.Log("Collided!");
+            Destroy(collision.gameObject);
         }
     }
 }
