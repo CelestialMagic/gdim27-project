@@ -5844,7 +5844,7 @@ PrefabInstance:
     - target: {fileID: 4522452356064297792, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
       propertyPath: startingSquare
       value: 
-      objectReference: {fileID: 7774984846822624991, guid: 9233418b652ef44a18b8fa211cdd7216, type: 3}
+      objectReference: {fileID: 4147748598152592200, guid: ca163025c8f9944a08910b116ae27c2b, type: 3}
     - target: {fileID: 4522452356064297792, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
       propertyPath: allowedEncounters
       value: 6
