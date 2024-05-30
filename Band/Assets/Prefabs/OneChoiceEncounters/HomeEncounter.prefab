@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8517601654271575000}
   - component: {fileID: 5564602257948158097}
   m_Layer: 6
-  m_Name: OneChoiceEncounter 1
+  m_Name: HomeEncounter
   m_TagString: OneChoice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -130,12 +130,18 @@ MonoBehaviour:
   encounterNum: 1
   icon: {fileID: 4945150456922168925}
   inactiveColor: {r: 0.19215687, g: 0.3764706, b: 0.2, a: 1}
-  choiceAFans: 0
+  choiceAFans: -20
   choiceAMoney: 0
-  encounterName: 
-  choiceAText: 
-  encounterText: 
-  choiceAFinish: 
+  encounterName: Sick Leave
+  choiceAText: Get well soon...
+  encounterText: One of your band members learns that their parents are sick back
+    home. As such, they regretfully decide to leave the band to take care of their
+    folks.
+  choiceAFinish: 'You feel bad about the situation, but know that family always comes
+    first. Most of your fans seem to agree, but some of them lose interest with the
+    loss of their favorite member.
+
+    Lose 20 Fans'
 --- !u!1 &2536861967560810077
 GameObject:
   m_ObjectHideFlags: 0
