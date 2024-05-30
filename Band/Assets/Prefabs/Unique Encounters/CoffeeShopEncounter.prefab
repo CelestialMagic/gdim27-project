@@ -135,10 +135,10 @@ MonoBehaviour:
   encounterName: Coffee Shop
   choiceAText: Play to the scene
   encounterText: You landed a gig at that happening coffee shop that all those famous
-    musicians played at before they made it big! The manager of La Sinfonia has pretty
-    particular taste in music, though. If you play a setlist that the boss likes,
-    you'll be able to score some extra cash. Might not be great for showing your
-    soon-to-be fans what you're all about, though...
+    musicians played at before they made it big! The manager of "La Sinfonia" has
+    pretty particular taste in music, though. If you play a setlist that the boss
+    likes, you'll be able to score some extra cash. Might not be great for showing
+    your soon-to-be fans what you're all about, though...
   choiceAFinish: "A little extra pocket lining never hurt anybody. Here's hoping
     the fans understand. \nGain 200 Revenue and lose 10 Fans "
   choiceBFans: 20

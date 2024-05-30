@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -298565909930163861}
   - component: {fileID: 5126283960067607992}
   m_Layer: 6
-  m_Name: GigTemplate 1
+  m_Name: ShopGig
   m_TagString: Gig
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 7309790120637949959}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 5.12, y: 5.12, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -79,8 +79,8 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_DrawMode: 1
+  m_Size: {x: 0.5, y: 0.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -104,13 +104,13 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.56, y: 2.56}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 0.5, y: 0.5}
     adaptiveTilingThreshold: 0.5
-    drawMode: 0
+    drawMode: 1
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
 --- !u!114 &5126283960067607992
 MonoBehaviour:
@@ -127,17 +127,30 @@ MonoBehaviour:
   isEncounter: 0
   isGig: 1
   encounterNum: 0
-  gigName: 
-  optionAText: 
-  optionBText: 
+  gigName: 'Back to your Roots '
+  optionAText: Sign the guitar
+  optionBText: Sign some equipment
   gigText: "You get a gig at the local music shop where you bought your guitar way
     back when you started this whole band. Looking at your watch, you realize that
     this gig is in\u2026 TEN MINUTES!!! In the blink of an eye, you and your bandmates
     hop in the van, hoping to make it in time. \n"
-  gigChoiceText: 
-  optionAEpilogue: 
-  optionBEpilogue: 
-  optionAMoney: 0
-  optionAFans: 0
-  optionBMoney: 0
-  optionBFans: 0
+  gigChoiceText: After holding a heartstring-tugging performance, the owner asks
+    to have an instrument signed by your band to hang in the store. He offers to
+    let you sign a guitar from the shop, but you could also leave some of the band's
+    actual equipment, like some drumsticks and picks.
+  optionAEpilogue: 'Ultimately, you all sign one of the store''s guitars. It''s displayed
+    prominently behind the store counter, and you are seen as a hometown success!
+    Though, unfortunately, the owner takes a little off your pay to cover the cost
+    of the guitar.
+
+    Gain 300 Revenue and 50 Fans'
+  optionBEpilogue: 'You and your bandmates decide to each contribute a little portion
+    of your equipment, and the owner proudly displays them in a little case at the
+    front of the store, emblazoned with your band''s logo. That really ought to bring
+    in more fans.
+
+    Gain 350 Revenue and 70 Fans'
+  optionAMoney: 300
+  optionAFans: 50
+  optionBMoney: 350
+  optionBFans: 70
