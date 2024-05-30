@@ -272,8 +272,10 @@ MonoBehaviour:
   encounterText: On your way to a practice session with the rest of the band, you
     pass by a street performance. Since you've already got your instrument, it might
     be a good idea to join in.
-  choiceAFinish: "You couldn't stay long, but it seems like some of the members of
-    the crowd liked your style, and are now fans of your work!\t Gain 30 Fans"
+  choiceAFinish: 'You couldn''t stay long, but it seems like some of the members
+    of the crowd liked your style, and are now fans of your work!
+
+    Gain 30 Fans'
   choiceBFans: 0
   choiceBMoney: 50
   choiceBText: Leave it be

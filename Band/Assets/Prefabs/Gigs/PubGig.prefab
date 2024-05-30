@@ -110,7 +110,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
 --- !u!114 &5126283960067607992
 MonoBehaviour:
@@ -129,7 +129,7 @@ MonoBehaviour:
   encounterNum: 0
   gigName: Publicity Stunt
   optionAText: Rock out hard!
-  optionBText: Rock out responsibly!
+  optionBText: Rock responsibly!
   gigText: You snagged a gig at a hole-in-the-wall pub that has a music stage. It's
     not the most classy venue, but you still ought to get there on time! Better hurry
     and get driving, the gig's on in ten minutes!

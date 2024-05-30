@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -298565909930163861}
   - component: {fileID: 5126283960067607992}
   m_Layer: 6
-  m_Name: GigTemplate 1
+  m_Name: ParkGig
   m_TagString: Gig
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -110,7 +110,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
 --- !u!114 &5126283960067607992
 MonoBehaviour:
@@ -127,17 +127,27 @@ MonoBehaviour:
   isEncounter: 0
   isGig: 1
   encounterNum: 0
-  gigName: 
-  optionAText: 
-  optionBText: 
-  gigText: "You get a gig at the local music shop where you bought your guitar way
-    back when you started this whole band. Looking at your watch, you realize that
-    this gig is in\u2026 TEN MINUTES!!! In the blink of an eye, you and your bandmates
-    hop in the van, hoping to make it in time. \n"
-  gigChoiceText: 
-  optionAEpilogue: 
-  optionBEpilogue: 
-  optionAMoney: 0
-  optionAFans: 0
-  optionBMoney: 0
-  optionBFans: 0
+  gigName: Partyin' in the Park
+  optionAText: A rock anthem!
+  optionBText: A prog-rock piece!
+  gigText: There's an outdoor festival happening in Tempor Park today, and your band
+    snagged a timeslot for the festival stage. However, parking is brutal, and you
+    need to get there early enough to ensure you've got a spot and enough time to
+    set up. What are you waiting for? Let's go!
+  gigChoiceText: Everything's all set for your big performance at the festival! Your
+    equipment checks went great, and the crowd's all fired up from the last act!
+    Now you just need to decide what kind of song to clinch the crowd's approval
+    with at the end of the set.
+  optionAEpilogue: 'You blast through one of the band''s greatest hits, and the crowd
+    eats it up! This has been a truly satisfying outing for the group, raking in
+    fans and a little bit of cash alike.
+
+    Gain 50 Fans and 100 Revenue'
+  optionBEpilogue: "At first, a decent portion of the audience walks away, not liking
+    the flow of your progressive rock piece. But as the song crescendos to its resolution,
+    everyone watching goes wild! In fact, even after the festival, the album with
+    that piece on it sells a bunch of copies! \nGain 300 Revenue and 35 Fans"
+  optionAMoney: 100
+  optionAFans: 50
+  optionBMoney: 300
+  optionBFans: 35

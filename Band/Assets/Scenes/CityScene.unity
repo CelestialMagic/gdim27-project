@@ -5586,12 +5586,20 @@ PrefabInstance:
       objectReference: {fileID: 5564602257948158097, guid: 4ab1449c68eed4e3693f43020cff2687, type: 3}
     - target: {fileID: 4522452356064297792, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
       propertyPath: endingSquare.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4522452356064297792, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
       propertyPath: endingSquare.Array.data[0]
       value: 
       objectReference: {fileID: 5126283960067607992, guid: 4953701385fc8479cafd679d83b1ce9a, type: 3}
+    - target: {fileID: 4522452356064297792, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
+      propertyPath: endingSquare.Array.data[1]
+      value: 
+      objectReference: {fileID: 5126283960067607992, guid: d25407c838e8903408ef8e6d18a7ed81, type: 3}
+    - target: {fileID: 4522452356064297792, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
+      propertyPath: endingSquare.Array.data[2]
+      value: 
+      objectReference: {fileID: 5126283960067607992, guid: e82bb11ce8bda3840825e17666f1d0c9, type: 3}
     - target: {fileID: 4522452356064297793, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
       propertyPath: m_RootOrder
       value: 1
