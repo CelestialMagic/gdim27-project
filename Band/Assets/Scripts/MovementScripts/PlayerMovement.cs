@@ -86,6 +86,7 @@ public class PlayerMovement : MonoBehaviour
         {
             StartCoroutine(DelayMove(ReturnClosestXAboveSquare().transform.position));
             EraseAvailableSquares();
+            
         }
         else if (sideMovement.ReadValue<float>() < 0)
         {
@@ -106,17 +107,7 @@ public class PlayerMovement : MonoBehaviour
             EraseAvailableSquares();
         }
           
-            //Vector3 movementDirection = new Vector3(horizontalInput, verticalInput, 0).normalized;
-            // Calculate the new position after movement
-            
-           /* // Check if the new position is within the bounds of the grid
-            if (IsWithinGridBounds(newPosition))
-            {
-                // Move the player to the new position
-                
-            }
-
-            */
+      
         
     }
 
