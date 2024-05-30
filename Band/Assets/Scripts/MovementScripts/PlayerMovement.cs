@@ -6,6 +6,10 @@ using TMPro;
 
 public class PlayerMovement : MonoBehaviour
 {
+
+    [SerializeField]
+    private SpriteRenderer sr;
+
     private List<GameObject> moveablePlaces = new List<GameObject>();
 
     private List<GameObject> availableSquares = new List<GameObject>();
@@ -86,6 +90,7 @@ public class PlayerMovement : MonoBehaviour
         {
             StartCoroutine(DelayMove(ReturnClosestXAboveSquare().transform.position));
             EraseAvailableSquares();
+            sr.flipX = false;
             
         }
         else if (sideMovement.ReadValue<float>() < 0)
@@ -93,6 +98,7 @@ public class PlayerMovement : MonoBehaviour
             
             StartCoroutine(DelayMove(ReturnClosestXBelowSquare().transform.position));
             EraseAvailableSquares();
+            sr.flipX = true;
         }
 
         if(upwardMovement.ReadValue<float>() > 0){
