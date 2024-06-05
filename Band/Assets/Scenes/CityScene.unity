@@ -5834,9 +5834,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4522452356064297792, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
+      propertyPath: empty
+      value: 
+      objectReference: {fileID: 5517009921141448852, guid: 3aea6d723510848fb9972cd0e9b80d30, type: 3}
+    - target: {fileID: 4522452356064297792, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 415079358}
+    - target: {fileID: 4522452356064297792, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
+      propertyPath: spawnBuffer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4522452356064297792, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
       propertyPath: endingSquare
       value: 
@@ -5851,7 +5859,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4522452356064297792, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
       propertyPath: squares.Array.size
-      value: 14
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4522452356064297792, guid: 92ee9986064ca4775971b3e568490d8c, type: 3}
       propertyPath: squares.Array.data[0]

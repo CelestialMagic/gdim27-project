@@ -22,11 +22,12 @@ public class SquareSpawner : MonoBehaviour
     [SerializeField]
     private int allowedEncounters;//The total number of encounter for a board
 
-    [SerializeField]
-    private int allowedGigs;//The total number of gigs for a board
 
     [SerializeField]
     private Square startingSquare;//The starting square of the grid
+
+    [SerializeField]
+    private Square empty;
 
     [SerializeField]
     private List<Square> endingSquare;//The ending square of the grid
@@ -37,10 +38,14 @@ public class SquareSpawner : MonoBehaviour
     private GameObject g;
     private Square s;
 
+    [SerializeField]
+    private int spawnBuffer;
+
+    private int bufferTimer; 
     // Start is called before the first frame update
     void Start()
     {
-        
+        bufferTimer = spawnBuffer;
         for (int i = 0; i < column * row; i++)
         {
             if (i == 0)
@@ -74,34 +79,22 @@ public class SquareSpawner : MonoBehaviour
         int index = Random.Range(0, squares.Count);
         Square square = squares[index];
 
-        if(square.GetIsEncounter() == true && allowedEncounters > 0)
+
+        if(square.GetIsEncounter() == true && allowedEncounters > 0 &&  bufferTimer == 0)
         {
             square.SetMyEncounter(allowedEncounters);
             allowedEncounters--;
             squares.Remove(square);
-            
+            bufferTimer = spawnBuffer;
             return square;
             
-        }
-        else if (square.GetIsGig() == false && square.GetIsEncounter() == false)
-        {
-            return square;
         }
         else
         {
-            return GenerateRandomSquare();
+            bufferTimer--;
+            return empty;
         }
 
     }
 
-
-         /*   else if(square.GetIsGig() == true && allowedGigs > 0)
-        {
-            square.SetMyEncounter(allowedGigs);
-            allowedGigs--;
-            squares.Remove(square);
-            return square; 
-
-        }
-         */
 }
