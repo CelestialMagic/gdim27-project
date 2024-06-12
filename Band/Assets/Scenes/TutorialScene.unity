@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7, y: 90}
+  m_AnchoredPosition: {x: -7.6, y: 137}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &81428003
@@ -183,15 +183,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Use WASD to move
 
-    Each space you move will cost 25 Revenue. Make sure
-    you manage your money!
+    Moving between spaces costs $25. Make sure you manage
+    your money!
 
-    Encounter spaces will present you with two choices
-    that affect your Revenue and Fans.
+    Encounter (!) spaces will either provide you with two choices,
+    or a predetermined outcome.
 
-    Reach the Gig at the top right corner
-    to end the map. Make sure you plot out enough money to reach it safely. It costs
-    50 Revenue to enter the Gig once you reach it.
+    Reach the Gig at the top right corner to complete
+    your trip! Though, you might find the journey there to be a little bumpy... Well,
+    you''ll see when you get there.
 
 '
   m_isRightToLeft: 0
@@ -809,7 +809,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &1126816699
 RectTransform:
