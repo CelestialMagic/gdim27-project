@@ -98,7 +98,7 @@ public class PlayerMovement : MonoBehaviour
             
             StartCoroutine(DelayMove(ReturnClosestXBelowSquare().transform.position));
             EraseAvailableSquares();
-            sr.flipX = true$;
+            sr.flipX = true;
         }
 
         if(upwardMovement.ReadValue<float>() > 0){
