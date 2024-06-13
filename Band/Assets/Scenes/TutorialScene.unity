@@ -181,19 +181,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Use WASD to move
-
-    Moving between spaces costs $25. Make sure you manage
-    your money!
-
-    Encounter (!) spaces will either provide you with two choices,
-    or a predetermined outcome.
-
-    Reach the Gig at the top right corner to complete
-    your trip! Though, you might find the journey there to be a little bumpy... Well,
-    you''ll see when you get there.
-
-'
+  m_text: "Use WASD to move\nMoving between spaces costs $25, and reaching the Gig
+    costs $50...So make sure you manage your money!\nEncounter (!) spaces will either
+    provide you with two choices, or a predetermined outcome.\nOnce you reach an
+    Encounter, it will deactivate, and you will not be able to revisit it! \nReach
+    the Gig at the top right corner to complete your trip! Though, you might find
+    the journey there to be a little bumpy... Well, you'll see when you get there.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a098e8c2acc6849ffbf343b9df1921e0, type: 2}
   m_sharedMaterial: {fileID: -6840599003363183568, guid: a098e8c2acc6849ffbf343b9df1921e0, type: 2}
